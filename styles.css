@@ -1,5 +1,11 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 
 body {
     background-color: lightblue;
@@ -8,16 +14,18 @@ body {
 .main-container {
     display: flex;
     background-color: white;
-    border-radius: 10%;
-    height: 50%;
-    width: 50%;
+    border-radius: 30px;
+    height: 350px;
+    width: 500px;
+    box-shadow: 0 8px 8px -4px lightslategray;
 }
 
 .result-box {
     text-align: center;
     background-color:hsl(228, 45%, 44%);
-    border-radius: 10%;
+    border-radius: 30px;
     flex: 1;
+    color: antiquewhite;
 }
 
 .summary-box {
@@ -29,13 +37,55 @@ body {
 .summary-cat {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.summary-cat > div {
+    margin: 0 5% 0 5%;
 }
 
 .result-circ {
     background-color: midnightblue;
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 6rem;
+    width: 6rem;
     justify-content: center;
+}
+
+.cat-text {
+    display: flex;
+    gap: 5%;
+    font-weight: bold;
+}
+
+.cat-reaction{
+    background-color: lightpink;
+    color: darkred;
+}
+
+.cat-memory {
+    background-color: palegoldenrod;
+    color: goldenrod;
+}
+
+.cat-verbal {
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+.cat-visual {
+    background-color: lavender;
+    color: purple;
+}
+
+.total-score {
+    color: grey;
+}
+
+.score {
+    font-weight: bold;
+    color: black;
 }
